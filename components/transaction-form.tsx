@@ -13,7 +13,7 @@ import { PlusCircle, Edit3 } from 'lucide-react';
 
 interface TransactionFormProps {
   onSubmit: (transaction: Omit<Transaction, 'id'>) => void;
-  editingTransaction?: Transaction;
+  editingTransaction?: Transaction | null;
   onCancel?: () => void;
 }
 
